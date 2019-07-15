@@ -30,4 +30,4 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="16c0", ATTRS{idProduct}=="05dc", GROUP="use
 
 then reload udev rules `sudo udevadm control --reload`, `sudo udevadm trigger`.
 
-SCHEMATIC TO FOLLOW...
+Here is [the schematic](./prototype_board.pdf). On the breadboard I've not included the various groups of heaer pins (`J2`, `J3`, J4`) and jumper (`JP1`) nor the resetable fuse (`F1`) but they'll be there when I make build the PCB.
