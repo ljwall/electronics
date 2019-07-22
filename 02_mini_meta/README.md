@@ -8,9 +8,9 @@ There's a few component differences, based on what I had, and it's cut down in t
 
 I've placed a switch on the board for jumper 6 to enter to enter the boot loader.
 
-This is essentially an ATMega168 with minimal components to power the chip, have an external crystal, and use [vusb](https://www.obdev.at/products/vusb/index.html) for the USB connection. With the USBasbLoader bootloader, allowing it to self-program.
+This is essentially an ATMega168 with minimal components to power the chip, have an external crystal, and use [vusb](https://www.obdev.at/products/vusb/index.html) for the USB connection. With the USBaspLoader bootloader, allowing it to self-program.
 
-I've [forked USBapbLoader](https://github.com/ljwall/USBaspLoader) just to adjust the Makefile for initially programming the bootloader with the Arduino UNO.
+I've [forked USBaspLoader](https://github.com/ljwall/USBaspLoader) just to adjust the Makefile for initially programming the bootloader with the Arduino UNO.
 
 The pins referenced for [usb D-](https://github.com/ljwall/USBaspLoader/blob/a8aff30bded09f3275268ff1244ca353fc6d6bc5/firmware/bootloaderconfig.h#L74) and the [bootloader jumper](https://github.com/ljwall/USBaspLoader/blob/master/firmware/bootloaderconfig.h#L94) don't match what is currently shown one the schematic on the Metaboard homepage, so I've set up the breadboard in line with the current code.
 
@@ -30,4 +30,4 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="16c0", ATTRS{idProduct}=="05dc", GROUP="use
 
 then reload udev rules `sudo udevadm control --reload`, `sudo udevadm trigger`.
 
-Here is [the schematic](./prototype_board.pdf). On the breadboard I've not included the various groups of heaer pins (`J2`, `J3`, J4`) and jumper (`JP1`) nor the resetable fuse (`F1`) but they'll be there when I make build the PCB.
+Here is [the schematic](./prototype_board.pdf). On the breadboard I've not included the various groups of heaer pins (`J2`, `J3`, `J4`) and jumper (`JP1`) nor the resetable fuse (`F1`) but they'll be there when I make build the PCB.
