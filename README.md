@@ -8,6 +8,7 @@ Using a borrowed Arduino UNO to build a version of the [metaboard](https://metal
 
 * [Turn an Arduino UNO into an AVRISP, and make an LED blink](./01_arduino_isp_blink/)
 * [Mini-metaboard on a breadboard](./02_mini_meta/)
+* [AVRProg on breadboard metaboard](./03_meta_avr_prog/)
 
 ## Audio
 
