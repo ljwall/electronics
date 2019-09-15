@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name lm386-amp)(type KiCad)(uri ${KIPRJMOD}/lm386-amp.pretty)(options "")(descr ""))
+)
