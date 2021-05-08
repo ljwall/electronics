@@ -26,7 +26,7 @@ TARGET = main
 # to get a full listing.
 # AVRDUDE_PROGRAMMER = dapa              # official name of 
 # AVRDUDE_PROGRAMMER = dragon_isp
-AVRDUDE_PROGRAMMER = arduino_avrisp
+AVRDUDE_PROGRAMMER = usbasp
 #AVRDUDE_PROGRAMMER = usbtiny
 
 #AVRDUDE_PORT = usb:001:011
@@ -134,7 +134,7 @@ AVRDUDE_WRITE_FLASH = -U flash:w:$(TARGET).hex
 #AVRDUDE_WRITE_EEPROM = -U eeprom:w:$(TARGET).eep
 
 #AVRDUDE_FLAGS = -p $(MCU) -P $(AVRDUDE_PORT) -c $(AVRDUDE_PROGRAMMER)
-AVRDUDE_FLAGS = -p $(MCU) -P $(AVRDUDE_PORT) -c $(AVRDUDE_PROGRAMMER)
+AVRDUDE_FLAGS = -p $(MCU) -c $(AVRDUDE_PROGRAMMER)
 
 # Uncomment the following if you want avrdude's erase cycle counter.
 # Note that this counter needs to be initialized first using -Yn,

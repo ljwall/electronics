@@ -24,7 +24,7 @@ int main(void)
 	TCCR1B |= 1<<CS11;
 
 	// Count 15624 cycles for rought 0.5s interrupt
-	OCR1A = 62500; // 5s
+	OCR1A = 62500/1;
 
 	// Put Timer/Counter1 in CTC mode
 	TCCR1B |= 1<<WGM12;
